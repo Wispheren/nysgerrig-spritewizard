@@ -1,0 +1,56 @@
+#dropArea {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjlCOEYwQUVEQUY0MzExRThBQjRDRTM5RUI0QkI3REY1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjlCOEYwQUVFQUY0MzExRThBQjRDRTM5RUI0QkI3REY1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OUI4RjBBRUJBRjQzMTFFOEFCNENFMzlFQjRCQjdERjUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OUI4RjBBRUNBRjQzMTFFOEFCNENFMzlFQjRCQjdERjUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7yv48DAAAALUlEQVR42mL8//8/AzZw9uxZrOJMDCSCUQ3EAMYzZ85glTA2Nh4NJfppAAgwAPCaCIAIZfq8AAAAAElFTkSuQmCC');
+
+}
+
+#help {
+    position: fixed;
+    top: 5%;
+    right: 1%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+    border-radius: 50px;
+    padding: 5px;
+    color: #fff;
+    background-color: #999;
+    border: solid 2px #fff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#explainer {
+    font-size: 1px;
+    pointer-events: none;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    transform: translate(50%,-50%);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    padding: 20px;
+    transition: opacity 250ms, top 250ms, right 250ms, font-size 250ms;    
+    opacity: 0;
+    color: #fff;
+    background-color: #999;
+    border: solid 2px #fff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+#help:hover+#explainer {
+    font-size: 20px;
+    opacity: 1;
+    top: 50%;
+    right: 50%;
+}
